@@ -1,6 +1,5 @@
-// Terminal cursor animation and simple interactions
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Cursor blinking animation
     const cursor = document.querySelector('.cursor');
     if (cursor) {
         setInterval(() => {
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
     
-    // Add terminal typing effect to project links
     const links = document.querySelectorAll('.link');
     links.forEach(link => {
         link.addEventListener('mouseenter', function() {
@@ -20,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Terminal window buttons interaction
     const terminalButtons = document.querySelectorAll('.terminal-buttons span');
     terminalButtons.forEach(button => {
         button.addEventListener('click', function() {
